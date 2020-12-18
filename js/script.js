@@ -5,6 +5,13 @@ var root = new Vue(
       films: [],
     },
 
+    methods: {
+      search: function() {
+        console.log('click');
+        },
+
+      },
+
     mounted: function() {
       var self = this;
       axios
@@ -12,11 +19,8 @@ var root = new Vue(
       .then(
         (result) => {
           console.log(result);
-
-
       }
     );
-
 
   },
 })
