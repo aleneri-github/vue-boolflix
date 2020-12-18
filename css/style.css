@@ -11,7 +11,7 @@ header {
   align-items: center;
   height: 70px;
   background-color: black;
-  padding: 20px;
+  padding: 20px 85px;
 }
 
 header h1 {
@@ -40,5 +40,6 @@ main {
   height: 330px;
   width: 220px;
   margin: 10px;
-  background-color: lime;
+  background-image: url('https://images-na.ssl-images-amazon.com/images/I/51bb1KcmOZL._SY445_.jpg');
+  background-size: cover;
 }
