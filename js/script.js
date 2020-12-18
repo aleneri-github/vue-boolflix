@@ -1,10 +1,22 @@
-var app = new Vue({
-  el: '#root',
-  data: {
+var root = new Vue(
+  {
+    el: '#root',
+    data: {
+      films: [],
+    },
+
+    mounted: function() {
+      var self = this;
+      axios
+      .get('https://api.themoviedb.org/3/search/movie?api_key=d65d8c3ec5cb5d67bcfef8d1bc60f32c&query=ritorno al futuro')
+      .then(
+        (result) => {
+          console.log(result);
+
+
+      }
+    );
 
 
   },
-  methods: {
-
-  },
-});
+})
