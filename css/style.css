@@ -5,29 +5,13 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.clearfix::after {
-content: "";
-display: table;
-clear: both;
-}
-
 header {
-  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
   background-color: black;
-  padding: 0px 20px;
-
-}
-
-#header-left {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-#header-right {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  padding: 20px;
 }
 
 header h1 {
@@ -36,14 +20,25 @@ header h1 {
 
 input {
   margin-right: 10px;
-  height: 40px;
+  height: 30px;
 }
 
 button {
-  height: 40px;
+  height: 30px;
 }
 
 main {
-  height: calc(800px - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
   background-color: #141414;
+}
+
+.film-box {
+  height: 330px;
+  width: 220px;
+  margin: 10px;
+  background-color: lime;
 }
