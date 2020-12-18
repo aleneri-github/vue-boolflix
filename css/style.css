@@ -23,8 +23,10 @@ input {
   height: 30px;
 }
 
-button {
+i {
   height: 30px;
+  color: white;
+  cursor: pointer;
 }
 
 main {
@@ -37,9 +39,24 @@ main {
 }
 
 .film-box {
+  position: relative;
   height: 330px;
   width: 220px;
   margin: 10px;
   background-image: url('https://images-na.ssl-images-amazon.com/images/I/51bb1KcmOZL._SY445_.jpg');
   background-size: cover;
+}
+
+.film-box:hover .info-film {
+  display: block;
+}
+
+.info-film {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
 }
