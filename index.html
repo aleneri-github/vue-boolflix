@@ -22,7 +22,7 @@
           </nav>
       </header>
       <main>
-        <div v-for='film in films' v-bind:style="{}" class="film-box">
+        <div v-for='film in films' :style="{backgroundImage: 'url(' + prefixPath + film.poster_path + ')'}" class="film-box">
           <div class="info-film">
             <div><strong>Titolo:
             </strong><span></span>
