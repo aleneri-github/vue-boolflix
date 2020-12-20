@@ -58,6 +58,7 @@ main {
   margin: 10px;
   background-size: cover;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .film-box:hover .info-film {
