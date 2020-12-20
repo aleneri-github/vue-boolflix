@@ -5,6 +5,11 @@
   font-family: 'Roboto', sans-serif;
 }
 
+body {
+  height: 100vh;
+  background-color: #141414;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -36,7 +41,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  height: calc(100vh - 70px);
+  height: 100%;
   padding-top: 20px;
   background-color: #141414;
 }

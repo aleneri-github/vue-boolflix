@@ -29,6 +29,7 @@ var root = new Vue(
           .then(function (result) {
             console.log(result.data.results);
             self.userSearch = '';
+            self.films = result.data.results
           }
         );
       },
