@@ -4,7 +4,7 @@ var root = new Vue(
     data: {
       films: [],
       userSearch: '',
-      imgNotAvailable: 'img/cover_not_avail_sm.gif',
+      imgNotAvailable: 'img/img_not_availiable.jpg',
       prefixPath: 'https://image.tmdb.org/t/p/w220_and_h330_face'
     },
 
