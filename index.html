@@ -17,8 +17,8 @@
       <header>
           <h1>BOOLFLIX</h1>
           <nav>
-            <input type="text" name="" value="">
-            <i @click="search" class="fas fa-search"></i>
+            <input type="text" v-model="userSearch">
+            <i @click="searchFilm" class="fas fa-search"></i>
           </nav>
       </header>
       <main>

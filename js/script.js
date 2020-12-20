@@ -3,11 +3,15 @@ var root = new Vue(
     el: '#root',
     data: {
       films: [],
+      userSearch: ''
     },
 
     methods: {
-      search: function() {
-        console.log('click');
+      searchFilm: function() {
+        var input = this.userSearch;
+        this.userSearch = '';
+        console.log(input);
+
         },
 
       },
