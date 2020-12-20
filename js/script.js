@@ -20,12 +20,14 @@ var root = new Vue(
           {
             params: {
               api_key: 'd65d8c3ec5cb5d67bcfef8d1bc60f32c',
-              query: self.userSearch
+              query: self.userSearch,
+              language: 'it-IT'
             }
           }
         )
           .then(function (result) {
             console.log(result.data.results);
+            self.userSearch = '';
           }
         );
       },
