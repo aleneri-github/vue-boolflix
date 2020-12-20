@@ -24,21 +24,32 @@
       <main>
         <div v-for='film in films' :style="(film.poster_path == null) ? {backgroundImage: 'url(' + imgNotAvailable + ')'} : {backgroundImage: 'url(' + prefixPath + film.poster_path + ')'}" class="film-box">
           <div class="info-film">
-            <div><strong>Titolo:
-            </strong><span>{{film.title}}</span>
+            <div>
+              <strong>Titolo: </strong>
+              <span>{{film.title}}</span>
             </div>
-            <div><strong>Titolo originale: </strong><span>{{ film.original_title }}</span></div>
-            <div><strong>Lingua: </strong><span>{{film.original_language}}</span></div>
-            <div><strong>Voto: </strong><span>{{film.vote_average}}</span>
-            <div><strong>Overview: </strong><p>{{ film.overview }}</p>
+            <div>
+              <strong>Titolo originale: </strong>
+              <span>{{ film.original_title }}</span>
             </div>
+            <div>
+              <strong>Lingua: </strong>
+              <span>{{film.original_language}}</span>
+            </div>
+            <div>
+              <strong>Voto: </strong>
+              <span>{{film.vote_average}}</span>
+            </div>
+            <div>
+              <strong>Overview: </strong>
+              <p>{{ film.overview }}</p>
             </div>
           </div>
         </div>
 
       </main>
     </body>
-
+    
   </div>
 
   <script src="js/script.js" charset="utf-8"></script>
