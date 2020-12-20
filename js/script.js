@@ -4,7 +4,8 @@ var root = new Vue(
     data: {
       films: [],
       userSearch: '',
-      filmsSearched: []
+      filmsSearched: [],
+      prefixPath: 'https://image.tmdb.org/t/p/w220_and_h330_face'
     },
 
     methods: {
