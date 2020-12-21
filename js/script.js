@@ -33,15 +33,11 @@ var root = new Vue(
 
             self.films.forEach(
               (element) => {
-                let roundNumber = Math.ceil(element.vote_average) / 2;
-                // console.log(roundNumber);
+                let roundNumber = element.vote_average / 2;
                 let roundNumber2 = Math.ceil(roundNumber);
                 console.log(roundNumber2);
               }
             )
-
-
-
           }
         );
       },
