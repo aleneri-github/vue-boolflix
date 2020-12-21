@@ -4,13 +4,7 @@ var root = new Vue(
     data: {
       films: [],
       userSearch: '',
-      imgNotAvailable: 'img/img_not_availiable.jpg',
-      flags: {
-        it: 'img/it_flag.jpg',
-        de: 'img/de_flag.jpg',
-        uk: 'img/en_flag.jpg',
-        es: 'img/es_flag.jpg'
-      },
+      imgNotAvailable: 'img/img_not_availiable.jpg',    
       prefixPath: 'https://image.tmdb.org/t/p/w220_and_h330_face'
     },
 
