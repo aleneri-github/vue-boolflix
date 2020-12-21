@@ -92,3 +92,9 @@ main {
 .info-film i {
   color: yellow;
 }
+
+.info-film .flag {
+  width: 30px;
+  height: 20px;
+  background-color: red;
+}
