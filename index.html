@@ -44,11 +44,9 @@
             <div>
               <strong>Voto: </strong>
               <span>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
+                <i v-for="star in film.starFull" class="fas fa-star"></i>
+                <i v-for="star in (5 - film.starFull)" class="far fa-star"></i>
+
               </span>
             </div>
             <div>
