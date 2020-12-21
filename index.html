@@ -40,7 +40,7 @@
             <div>
               <strong>Lingua: </strong>
               <img :src='"img/" +                     film.original_language + "_flag.jpg"'
-                v-if="film.original_language == 'it' || film.original_language == 'en' || film.original_language == 'de' " class="flag" alt="flag">
+                v-if="film.original_language == 'it' || film.original_language == 'en' || film.original_language == 'de' || film.original_language == 'es' " class="flag" alt="flag">
                 <span v-else>
                   {{film.original_language}}
                 </span>

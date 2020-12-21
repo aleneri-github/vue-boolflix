@@ -8,7 +8,8 @@ var root = new Vue(
       flags: {
         it: 'img/it_flag.jpg',
         de: 'img/de_flag.jpg',
-        uk: 'img/en_flag.jpg'
+        uk: 'img/en_flag.jpg',
+        es: 'img/es_flag.jpg'
       },
       prefixPath: 'https://image.tmdb.org/t/p/w220_and_h330_face'
     },
