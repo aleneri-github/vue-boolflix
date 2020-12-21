@@ -5,6 +5,11 @@ var root = new Vue(
       films: [],
       userSearch: '',
       imgNotAvailable: 'img/img_not_availiable.jpg',
+      flags: {
+        italy: 'img/italy.jpg',
+        germany: 'img/germany.jpg',
+        uk: 'img/uk.jpg'
+      },
       prefixPath: 'https://image.tmdb.org/t/p/w220_and_h330_face'
     },
 
