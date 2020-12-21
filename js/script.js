@@ -30,6 +30,18 @@ var root = new Vue(
             console.log(result.data.results);
             self.userSearch = '';
             self.films = result.data.results
+
+            self.films.forEach(
+              (element) => {
+                let roundNumber = Math.ceil(element.vote_average) / 2;
+                // console.log(roundNumber);
+                let roundNumber2 = Math.ceil(roundNumber);
+                console.log(roundNumber2);
+              }
+            )
+
+
+
           }
         );
       },
