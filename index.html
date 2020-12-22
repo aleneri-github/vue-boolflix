@@ -61,7 +61,9 @@
         </div>
 
 
-        <div v-for='tv in series' class="film-box">
+        <div v-for='tv in series' class="film-box"
+        :style="(tv.poster_path == null) ? {backgroundImage: 'url(' + imgNotAvailable + ')'} : {backgroundImage: 'url(' + prefixPath + tv.poster_path + ')'}">
+
           <div class="info-film">
             <div>
               <strong>Titolo: </strong>
