@@ -35,7 +35,7 @@ var root = new Vue(
               (element) => {
                 let roundNumber = element.vote_average / 2;
                 element.starFull = Math.ceil(roundNumber);
-                console.log(element.starFull);
+                // console.log(element.starFull);
               }
             )
           }
@@ -44,7 +44,7 @@ var root = new Vue(
 
         axios
 
-          .get('https://api.themoviedb.org/3/search/movie',
+          .get('https://api.themoviedb.org/3/search/tv',
           {
             params: {
               api_key: 'd65d8c3ec5cb5d67bcfef8d1bc60f32c',
@@ -56,13 +56,13 @@ var root = new Vue(
           .then(function (result) {
             console.log(result.data.results);
             self.userSearch = '';
-            self.films = result.data.results
+            self.series = result.data.results
 
-            self.films.forEach(
+            self.series.forEach(
               (element) => {
                 let roundNumber = element.vote_average / 2;
                 element.starFull = Math.ceil(roundNumber);
-                console.log(element.starFull);
+                // console.log(element.starFull);
               }
             )
           }
