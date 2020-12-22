@@ -33,6 +33,12 @@ header h5 {
   cursor: pointer;
 }
 
+h3 {
+  color: red;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
 input {
   margin-right: 10px;
   height: 30px;

@@ -32,6 +32,7 @@
         <div v-for='film in films' :style="(film.poster_path == null) ? {backgroundImage: 'url(' + imgNotAvailable + ')'} : {backgroundImage: 'url(' + prefixPath + film.poster_path + ')'}" class="film-box">
           <div class="info-film">
             <div>
+              <h3>FILM</h3>
               <strong>Titolo: </strong>
               <span>{{film.title}}</span>
             </div>
@@ -67,6 +68,7 @@
         :style="(tv.poster_path == null) ? {backgroundImage: 'url(' + imgNotAvailable + ')'} : {backgroundImage: 'url(' + prefixPath + tv.poster_path + ')'}">
           <div class="info-film">
             <div>
+              <h3>SERIE TV</h3>
               <strong>Titolo: </strong>
               <span>{{tv.name}}</span>
             </div>
