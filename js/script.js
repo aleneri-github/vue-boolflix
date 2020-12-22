@@ -16,6 +16,8 @@ var root = new Vue(
         var input = self.userSearch;
         console.log(input);
 
+
+        // Chiamata ajax per film
         axios
 
           .get('https://api.themoviedb.org/3/search/movie',
@@ -43,6 +45,7 @@ var root = new Vue(
         );
 
 
+        // Chiamata ajax per serie TV
         axios
 
           .get('https://api.themoviedb.org/3/search/tv',
@@ -68,11 +71,6 @@ var root = new Vue(
             )
           }
         );
-
-
-
-
-
 
       },
     },

@@ -27,9 +27,8 @@
           </nav>
       </header>
       <main>
-        <h2>Films</h2>
 
-
+        <!-- FILM -->
         <div v-for='film in films' :style="(film.poster_path == null) ? {backgroundImage: 'url(' + imgNotAvailable + ')'} : {backgroundImage: 'url(' + prefixPath + film.poster_path + ')'}" class="film-box">
           <div class="info-film">
             <div>
@@ -53,7 +52,6 @@
               <span>
                 <i v-for="star in film.starFull" class="fas fa-star"></i>
                 <i v-for="star in (5 - film.starFull)" class="far fa-star"></i>
-
               </span>
             </div>
             <div>
@@ -62,13 +60,11 @@
             </div>
           </div>
         </div>
+        <!-- /FILM -->
 
-        <h2>Serie TV</h2>
-
-
+        <!-- SERIE TV -->
         <div v-for='tv in series' class="film-box"
         :style="(tv.poster_path == null) ? {backgroundImage: 'url(' + imgNotAvailable + ')'} : {backgroundImage: 'url(' + prefixPath + tv.poster_path + ')'}">
-
           <div class="info-film">
             <div>
               <strong>Titolo: </strong>
@@ -81,19 +77,16 @@
             <div>
               <strong>Lingua: </strong>
               <img :src='"img/" +                     tv.original_language + "_flag.jpg"'
-                v-if="tv.original_language == 'it' || tv.original_language == 'en' || tv.original_language == 'de' || tv.original_language == 'es' " class="flag" alt="flag">
-                <span v-else>
-                  {{tv.original_language}}
-                </span>
-
-
+              v-if="tv.original_language == 'it' || tv.original_language == 'en' || tv.original_language == 'de' || tv.original_language == 'es' " class="flag" alt="flag">
+              <span v-else>
+                {{tv.original_language}}
+              </span>
             </div>
             <div>
               <strong>Voto: </strong>
               <span>
                 <i v-for="star in tv.starFull" class="fas fa-star" class="fas fa-star"></i>
                 <i v-for="star in (5 - tv.starFull)" class="far fa-star"></i>
-
               </span>
             </div>
             <div>
@@ -102,13 +95,9 @@
             </div>
           </div>
         </div>
-
-
+        <!-- /SERIE TV -->
       </main>
     </body>
-
   </div>
-
   <script src="js/script.js" charset="utf-8"></script>
-
 </html>
