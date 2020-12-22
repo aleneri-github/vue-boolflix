@@ -61,35 +61,34 @@
         </div>
 
 
-        <div v-for='film in films' :style="(film.poster_path == null) ? {backgroundImage: 'url(' + imgNotAvailable + ')'} : {backgroundImage: 'url(' + prefixPath + film.poster_path + ')'}" class="film-box">
+        <div v-for='tv in series' class="film-box">
           <div class="info-film">
             <div>
               <strong>Titolo: </strong>
-              <span>{{film.title}}</span>
+              <span>{{}}</span>
             </div>
             <div>
               <strong>Titolo originale: </strong>
-              <span>{{film.original_title}}</span>
+              <span>{{}}</span>
             </div>
             <div>
               <strong>Lingua: </strong>
-              <img :src='"img/" +                     film.original_language + "_flag.jpg"'
-                v-if="film.original_language == 'it' || film.original_language == 'en' || film.original_language == 'de' || film.original_language == 'es' " class="flag" alt="flag">
-                <span v-else>
-                  {{film.original_language}}
+
+                <span>
+
                 </span>
             </div>
             <div>
               <strong>Voto: </strong>
               <span>
-                <i v-for="star in film.starFull" class="fas fa-star"></i>
-                <i v-for="star in (5 - film.starFull)" class="far fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
 
               </span>
             </div>
             <div>
               <strong>Overview: </strong>
-              <p>{{film.overview}}</p>
+              <p></p>
             </div>
           </div>
         </div>
