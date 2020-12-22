@@ -3,6 +3,7 @@ var root = new Vue(
     el: '#root',
     data: {
       films: [],
+      series: [],
       userSearch: '',
       imgNotAvailable: 'img/img_not_availiable.jpg',
       prefixPath: 'https://image.tmdb.org/t/p/w220_and_h330_face'
