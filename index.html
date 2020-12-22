@@ -37,8 +37,8 @@
               <span>{{film.title}}</span>
             </div>
             <div>
-              <strong>Titolo originale: </strong>
-              <span>{{film.original_title}}</span>
+              <strong v-if="film.title != film.original_title">Titolo originale: </strong>
+              <span v-if="film.title != film.original_title">{{film.original_title}}</span>
             </div>
             <div>
               <strong>Lingua: </strong>
@@ -56,7 +56,7 @@
               </span>
             </div>
             <div>
-              <strong>Overview: </strong>
+              <strong v-if="film.overview != ''">Overview: </strong>
               <p>{{film.overview}}</p>
             </div>
           </div>
@@ -73,8 +73,8 @@
               <span>{{tv.name}}</span>
             </div>
             <div>
-              <strong>Titolo originale: </strong>
-              <span>{{tv.original_name}}</span>
+              <strong v-if="tv.name != tv.original_name">Titolo originale: </strong>
+              <span v-if="tv.name != tv.original_name">{{tv.original_name}}</span>
             </div>
             <div>
               <strong>Lingua: </strong>
@@ -92,7 +92,7 @@
               </span>
             </div>
             <div>
-              <strong>Overview: </strong>
+              <strong v-if="tv.overview != ''">Overview: </strong>
               <p>{{tv.overview}}</p>
             </div>
           </div>
