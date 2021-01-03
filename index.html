@@ -49,6 +49,12 @@
                 </span>
             </div>
             <div>
+              <strong>Cast: </strong>
+              <span>
+                
+              </span>
+            </div>
+            <div>
               <strong>Voto: </strong>
               <span>
                 <i v-for="star in film.starFull" class="fas fa-star"></i>
@@ -78,7 +84,7 @@
             </div>
             <div>
               <strong>Lingua: </strong>
-              <img :src='"img/" +                     tv.original_language + "_flag.jpg"'
+              <img :src='"img/" + tv.original_language + "_flag.jpg"'
               v-if="tv.original_language == 'it' || tv.original_language == 'en' || tv.original_language == 'de' || tv.original_language == 'es' " class="flag" alt="flag">
               <span v-else>
                 {{tv.original_language}}
