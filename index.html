@@ -50,9 +50,7 @@
             </div>
             <div>
               <strong>Cast: </strong>
-              <span>
-                
-              </span>
+              <div v-for="actor in film.actors">{{ actor }}</div>
             </div>
             <div>
               <strong>Voto: </strong>
@@ -89,6 +87,10 @@
               <span v-else>
                 {{tv.original_language}}
               </span>
+            </div>
+            <div>
+              <strong>Cast: </strong>
+              <div v-for="actor in tv.actors">{{ actor }}</div>
             </div>
             <div>
               <strong>Voto: </strong>
