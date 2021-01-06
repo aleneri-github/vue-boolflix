@@ -43,25 +43,46 @@
             <div>
               <div>
                 <strong>Genere: </strong>
-                <span v-if= 'film.genre_ids[0] === 28'>  Azione </span>
-                <span v-if= 'film.genre_ids[0] === 12'>  Avventura </span>
-                <span v-if= 'film.genre_ids[0] === 16'>  Animazione </span>
-                <span v-if= 'film.genre_ids[0] === 35'>  Commedia </span>
-                <span v-if= 'film.genre_ids[0] === 80'>  Crime </span>
-                <span v-if= 'film.genre_ids[0] === 99'>  Documentario </span>
-                <span v-if= 'film.genre_ids[0] === 18'>  Dramma </span>
-                <span v-if= 'film.genre_ids[0] === 10751'>  Famiglia </span>
-                <span v-if= 'film.genre_ids[0] === 14'>  Fantasy </span>
-                <span v-if= 'film.genre_ids[0] === 36'>  Storia </span>
-                <span v-if= 'film.genre_ids[0] === 27'>  Horror </span>
-                <span v-if= 'film.genre_ids[0] === 10402'>  Musica </span>
-                <span v-if= 'film.genre_ids[0] === 9648'>  Mistero </span>
-                <span v-if= 'film.genre_ids[0] === 10749'>  Romanzo </span>
-                <span v-if= 'film.genre_ids[0] === 878'>  Fantascienza </span>
-                <span v-if= 'film.genre_ids[0] === 10770'>  Film Tv </span>
-                <span v-if= 'film.genre_ids[0] === 53'>  Thriller </span>
-                <span v-if= 'film.genre_ids[0] === 10752'>  Guerra </span>
-                <span v-if= 'film.genre_ids[0] === 37'>  Western </span>
+                <div v-if= 'film.genre_ids[0] === 28'>  Azione </div>
+                <div v-if= 'film.genre_ids[0] === 12'>  Avventura </div>
+                <div v-if= 'film.genre_ids[0] === 16'>  Animazione </div>
+                <div v-if= 'film.genre_ids[0] === 35'>  Commedia </div>
+                <div v-if= 'film.genre_ids[0] === 80'>  Crime </div>
+                <div v-if= 'film.genre_ids[0] === 99'>  Documentario </div>
+                <div v-if= 'film.genre_ids[0] === 18'>  Dramma </div>
+                <div v-if= 'film.genre_ids[0] === 10751'>  Famiglia </div>
+                <div v-if= 'film.genre_ids[0] === 14'>  Fantasy </div>
+                <div v-if= 'film.genre_ids[0] === 36'>  Storia </div>
+                <div v-if= 'film.genre_ids[0] === 27'>  Horror </div>
+                <div v-if= 'film.genre_ids[0] === 10402'>  Musica </div>
+                <div v-if= 'film.genre_ids[0] === 9648'>  Mistero </div>
+                <div v-if= 'film.genre_ids[0] === 10749'>  Romanzo </div>
+                <div v-if= 'film.genre_ids[0] === 878'>  Fantascienza </div>
+                <div v-if= 'film.genre_ids[0] === 10770'>  Film Tv </div>
+                <div v-if= 'film.genre_ids[0] === 53'>  Thriller </div>
+                <div v-if= 'film.genre_ids[0] === 10752'>  Guerra </div>
+                <div v-if= 'film.genre_ids[0] === 37'>  Western </div>
+
+
+                <div v-if= 'film.genre_ids[1] === 28'>  Azione </div>
+                <div v-if= 'film.genre_ids[1] === 12'>  Avventura </div>
+                <div v-if= 'film.genre_ids[1] === 16'>  Animazione </div>
+                <div v-if= 'film.genre_ids[1] === 35'>  Commedia </div>
+                <div v-if= 'film.genre_ids[1] === 80'>  Crime </div>
+                <div v-if= 'film.genre_ids[1] === 99'>  Documentario </div>
+                <div v-if= 'film.genre_ids[1] === 18'>  Dramma </div>
+                <div v-if= 'film.genre_ids[1] === 10751'>  Famiglia </div>
+                <div v-if= 'film.genre_ids[1] === 14'>  Fantasy </div>
+                <div v-if= 'film.genre_ids[1] === 36'>  Storia </div>
+                <div v-if= 'film.genre_ids[1] === 27'>  Horror </div>
+                <div v-if= 'film.genre_ids[1] === 10402'>  Musica </div>
+                <div v-if= 'film.genre_ids[1] === 9648'>  Mistero </div>
+                <div v-if= 'film.genre_ids[1] === 10749'>  Romanzo </div>
+                <div v-if= 'film.genre_ids[1] === 878'>  Fantascienza </div>
+                <div v-if= 'film.genre_ids[1] === 10770'>  Film Tv </div>
+                <div v-if= 'film.genre_ids[1] === 53'>  Thriller </div>
+                <div v-if= 'film.genre_ids[1] === 10752'>  Guerra </div>
+                <div v-if= 'film.genre_ids[1] === 37'>  Western </div>
               </div>
               <strong>Lingua: </strong>
               <img :src='"img/" +                     film.original_language + "_flag.jpg"'
@@ -104,22 +125,39 @@
             </div>
             <div>
               <strong>Genere: </strong>
-              <span v-if= 'tv.genre_ids[0] === 10759'>  Azione e avventura </span>
-              <span v-if= 'tv.genre_ids[0] === 16'>  Animazione </span>
-              <span v-if= 'tv.genre_ids[0] === 35'>  Commedia </span>
-              <span v-if= 'tv.genre_ids[0] === 80'>  Crime </span>
-              <span v-if= 'tv.genre_ids[0] === 99'>  Documentario </span>
-              <span v-if= 'tv.genre_ids[0] === 18'>  Dramma </span>
-              <span v-if= 'tv.genre_ids[0] === 10751'>  Famiglia </span>
-              <span v-if= 'tv.genre_ids[0] === 10762'>  Ragazzi </span>
-              <span v-if= 'tv.genre_ids[0] === 9648'>  Mistero </span>
-              <span v-if= 'tv.genre_ids[0] === 10763'>  News </span>
-              <span v-if= 'tv.genre_ids[0] === 10764'>  Reality </span>
-              <span v-if= 'tv.genre_ids[0] === 10765'>  Sci-Fi & Fantasy </span>
-              <span v-if= 'tv.genre_ids[0] === 10766'>  Soap </span>
-              <span v-if= 'tv.genre_ids[0] === 10767'>  Talk </span>
-              <span v-if= 'tv.genre_ids[0] === 10768'>  War & Politics </span>              
-              <span v-if= 'tv.genre_ids[0] === 37'>  Western </span>
+              <div v-if= 'tv.genre_ids[0] === 10759'>  Azione e avventura </div>
+              <div v-if= 'tv.genre_ids[0] === 16'>  Animazione </div>
+              <div v-if= 'tv.genre_ids[0] === 35'>  Commedia </div>
+              <div v-if= 'tv.genre_ids[0] === 80'>  Crime </div>
+              <div v-if= 'tv.genre_ids[0] === 99'>  Documentario </div>
+              <div v-if= 'tv.genre_ids[0] === 18'>  Dramma </div>
+              <div v-if= 'tv.genre_ids[0] === 10751'>  Famiglia </div>
+              <div v-if= 'tv.genre_ids[0] === 10762'>  Ragazzi </div>
+              <div v-if= 'tv.genre_ids[0] === 9648'>  Mistero </div>
+              <div v-if= 'tv.genre_ids[0] === 10763'>  News </div>
+              <div v-if= 'tv.genre_ids[0] === 10764'>  Reality </div>
+              <div v-if= 'tv.genre_ids[0] === 10765'>  Sci-Fi & Fantasy </div>
+              <div v-if= 'tv.genre_ids[0] === 10766'>  Soap </div>
+              <div v-if= 'tv.genre_ids[0] === 10767'>  Talk </div>
+              <div v-if= 'tv.genre_ids[0] === 10768'>  War & Politics </div>
+              <div v-if= 'tv.genre_ids[0] === 37'>  Western </div>
+
+              <div v-if= 'tv.genre_ids[1] === 10759'>  Azione e avventura </div>
+              <div v-if= 'tv.genre_ids[1] === 16'>  Animazione </div>
+              <div v-if= 'tv.genre_ids[1] === 35'>  Commedia </div>
+              <div v-if= 'tv.genre_ids[1] === 80'>  Crime </div>
+              <div v-if= 'tv.genre_ids[1] === 99'>  Documentario </div>
+              <div v-if= 'tv.genre_ids[1] === 18'>  Dramma </div>
+              <div v-if= 'tv.genre_ids[1] === 10751'>  Famiglia </div>
+              <div v-if= 'tv.genre_ids[1] === 10762'>  Ragazzi </div>
+              <div v-if= 'tv.genre_ids[1] === 9648'>  Mistero </div>
+              <div v-if= 'tv.genre_ids[1] === 10763'>  News </div>
+              <div v-if= 'tv.genre_ids[1] === 10764'>  Reality </div>
+              <div v-if= 'tv.genre_ids[1] === 10765'>  Sci-Fi & Fantasy </div>
+              <div v-if= 'tv.genre_ids[1] === 10766'>  Soap </div>
+              <div v-if= 'tv.genre_ids[1] === 10767'>  Talk </div>
+              <div v-if= 'tv.genre_ids[1] === 10768'>  War & Politics </div>
+              <div v-if= 'tv.genre_ids[1] === 37'>  Western </div>
             </div>
             <div>
               <strong>Lingua: </strong>
