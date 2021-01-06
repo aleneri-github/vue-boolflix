@@ -42,6 +42,7 @@
             </div>
             <div>
               <div>
+                <!-- genere 1 film -->
                 <strong>Genere: </strong>
                 <div v-if= 'film.genre_ids[0] === 28'>  Azione </div>
                 <div v-if= 'film.genre_ids[0] === 12'>  Avventura </div>
@@ -63,7 +64,7 @@
                 <div v-if= 'film.genre_ids[0] === 10752'>  Guerra </div>
                 <div v-if= 'film.genre_ids[0] === 37'>  Western </div>
 
-
+                <!-- genere 2 film -->
                 <div v-if= 'film.genre_ids[1] === 28'>  Azione </div>
                 <div v-if= 'film.genre_ids[1] === 12'>  Avventura </div>
                 <div v-if= 'film.genre_ids[1] === 16'>  Animazione </div>
@@ -125,6 +126,8 @@
             </div>
             <div>
               <strong>Genere: </strong>
+
+              <!-- genere 1 serie tv -->
               <div v-if= 'tv.genre_ids[0] === 10759'>  Azione e avventura </div>
               <div v-if= 'tv.genre_ids[0] === 16'>  Animazione </div>
               <div v-if= 'tv.genre_ids[0] === 35'>  Commedia </div>
@@ -142,6 +145,7 @@
               <div v-if= 'tv.genre_ids[0] === 10768'>  War & Politics </div>
               <div v-if= 'tv.genre_ids[0] === 37'>  Western </div>
 
+              <!-- genere 2 serie tv -->
               <div v-if= 'tv.genre_ids[1] === 10759'>  Azione e avventura </div>
               <div v-if= 'tv.genre_ids[1] === 16'>  Animazione </div>
               <div v-if= 'tv.genre_ids[1] === 35'>  Commedia </div>
