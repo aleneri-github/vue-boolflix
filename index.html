@@ -43,7 +43,25 @@
             <div>
               <div>
                 <strong>Genere: </strong>
-                <div>   </div>
+                <span v-if= 'film.genre_ids[0] === 28'>  Azione </span>
+                <span v-if= 'film.genre_ids[0] === 12'>  Avventura </span>
+                <span v-if= 'film.genre_ids[0] === 16'>  Animazione </span>
+                <span v-if= 'film.genre_ids[0] === 35'>  Commedia </span>
+                <span v-if= 'film.genre_ids[0] === 80'>  Crime </span>
+                <span v-if= 'film.genre_ids[0] === 99'>  Documentario </span>
+                <span v-if= 'film.genre_ids[0] === 18'>  Dramma </span>
+                <span v-if= 'film.genre_ids[0] === 10751'>  Famiglia </span>
+                <span v-if= 'film.genre_ids[0] === 14'>  Fantasy </span>
+                <span v-if= 'film.genre_ids[0] === 36'>  Storia </span>
+                <span v-if= 'film.genre_ids[0] === 27'>  Horror </span>
+                <span v-if= 'film.genre_ids[0] === 10402'>  Musica </span>
+                <span v-if= 'film.genre_ids[0] === 9648'>  Mistero </span>
+                <span v-if= 'film.genre_ids[0] === 10749'>  Romanzo </span>
+                <span v-if= 'film.genre_ids[0] === 878'>  Fantascienza </span>
+                <span v-if= 'film.genre_ids[0] === 10770'>  Film Tv </span>
+                <span v-if= 'film.genre_ids[0] === 53'>  Thriller </span>
+                <span v-if= 'film.genre_ids[0] === 10752'>  Guerra </span>
+                <span v-if= 'film.genre_ids[0] === 37'>  Western </span>
               </div>
               <strong>Lingua: </strong>
               <img :src='"img/" +                     film.original_language + "_flag.jpg"'
